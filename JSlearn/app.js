@@ -39,4 +39,5 @@ console.log(typeof x)
 console.log(null)
 */
 
-//5 - 
+//5 - Приоритеты операторов
+const fullAge = 26
