@@ -1,10 +1,25 @@
 //1 - Переменные
 // var не использовать - плохой тон
 const firstName = 'Leonid'
-let age = 20
-console.log(age)
+let myAge = 20
+console.log(myAge)
 
 
 //2 - мутирование
-console.log('имя человека '+ firstName + ', а возвраст '+age)
+/*
+console.log('имя человека '+ firstName + ', а возвраст '+myAge)
+
+myAge = prompt('Введите число')
+
+console.log('имя человека '+ firstName + ', а возвраст '+myAge)
+*/
+
+
+//3 - Операторы
+const currentYear = 2020;
+const bearthYear = 2000;
+const age = currentYear - bearthYear
+
+
+
 
