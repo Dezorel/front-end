@@ -9,16 +9,43 @@
 </head>
 <body>
     <div class="app">
-       <span v-bind:title="message">
+        <h1>Основы:</h1>
+        <div align="center">
+            <span v-bind:title="message">
            Наведи на меня курсор на пару секунд,
             чтобы увидеть динамически связанное значение title!
-       </span>
+            </span>
 
-        <h2>{{ text }}</h2>
-        <input v-model="text" style="width:25%">
-        <br>
-        <br>
-        <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+            <h2>{{ text }}</h2>
+            <input v-model="text" style="width:25%">
+            <br>
+            <br>
+            <button v-on:click="reverseMessage">Перевернуть сообщение</button>
+        </div>
+
+        <hr>
+        <h1>Компоненты:</h1>
+        <div>
+            <ol>
+                <todo-item v-for="item in groceryList" v-bind:todo="item" v-bind:key="item.key">
+                </todo-item>
+            </ol>
+        </div>
+        <hr>
+
+        <div>
+            <h1>Практика с компонентом (делаю todo list с вводом данных через инпут)</h1>
+            <p>Введите дело</p>
+            <input v-model="newTextTodo">
+            <br><br>
+            <button v-on:click="createTodo">Добавить</button>
+            <br><br>
+            <ol>
+                <my-todo v-for="todo in todoList" v-bind:my-todo="todo" v-bind:key="todo.key">
+
+                </my-todo>
+            </ol>
+        </div>
 
 
     </div>
