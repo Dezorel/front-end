@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d39be876-ae6c-49c0-a95a-9a50ddb23655" name="Default Changelist" comment="4 - primitive type">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/app2.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Vue/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/someThinkGood.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/someThinkGood.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -28,6 +32,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -58,7 +63,7 @@
       <workItem from="1608902289179" duration="3046000" />
       <workItem from="1608927748848" duration="6894000" />
       <workItem from="1609008715077" duration="8697000" />
-      <workItem from="1609172356556" duration="3151000" />
+      <workItem from="1609172356556" duration="4182000" />
     </task>
     <task id="LOCAL-00001" summary="3 - operators">
       <created>1608903569383</created>

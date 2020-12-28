@@ -47,10 +47,17 @@
                 </my-todo>
             </ol>
         </div>
+
+        <hr>
+        <h1>Тест реактивности с селектом</h1>
+        <select v-model="selected">
+            <option disabled value="">Выберите один из вариантов</option>
+            <option>А</option>
+            <option>Б</option>
+            <option>В</option>
+        </select>
+        <p>Выбрано: {{ selected }}</p>
     </div>
 
-    <div class="anotherApp">
-
-    </div>
 </body>
 </html>

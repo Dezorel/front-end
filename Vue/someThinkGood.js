@@ -21,6 +21,7 @@ let app = new Vue({
             {id:3 , text:'Выспаться'}
         ],
         todoList:[],
+        selected: '',
     },
     methods: {
         reverseMessage: function () {
