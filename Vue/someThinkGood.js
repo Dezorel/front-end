@@ -1,5 +1,7 @@
 Vue.component('todo-item', {
-    props: ['todo'],
+    props: {
+        todo:String
+    },
     template: '<li>  {{ todo.text }}   </li>'
 })
 
