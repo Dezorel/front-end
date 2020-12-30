@@ -13,7 +13,7 @@
 
             <div class="card" style="width: 450px">
                 <div class="card-header">
-                    Calculator
+                   <h2>Calculator</h2>
                 </div>
                 <div class="card-body">
 
@@ -48,7 +48,7 @@
                     </div>
 
                     <div class="mt-5">
-                        <h1 align="center">History</h1>
+                        <h2 align="center">History</h2>
                         <history v-for="item in historyList" v-bind:text="item" v-bind:key="item.key"></history>
                     </div>
                 </div>
@@ -60,6 +60,9 @@
 <style>
     .col{
         height: 40px;
+    }
+    body{
+        font-size: 21px;
     }
 </style>
 </body>
