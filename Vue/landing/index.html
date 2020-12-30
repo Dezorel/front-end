@@ -193,7 +193,7 @@
                 <h4 class="mt-3">Что нужно сделать?</h4>
                 <div class="row">
 
-                    <div class="col">
+                    <div class="col" >
                         <button v-for="but in todoButtonList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
                                 type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
                     </div>
@@ -214,21 +214,23 @@
 
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control"  placeholder="Имя" name="name">
+                        <input type="text" class="form-control" v-model="name" @mousemove="checkForm" placeholder="Имя" name="name">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control"  placeholder="Как с вами связаться?" name="address">
+                        <input type="text" class="form-control" v-model="address" @mousemove="checkForm" placeholder="Как с вами связаться?" name="address">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <textarea class="form-control" id="validationTextarea" placeholder="Ваше сообщение" name="message">{{message}}</textarea>
+                        <textarea class="form-control" id="validationTextarea" @mousemove="checkForm" placeholder="Ваше сообщение"
+                                  name="message">{{message}}</textarea>
                     </div>
                 </div>
 
-                <button class="btn btn-primary" type="submit">Отправить</button>
+                <button class="btn btn-primary" v-show="isSubmit"  type="submit">Отправить</button>
+
             </form>
         </div>
         <!--Конец контакты-->

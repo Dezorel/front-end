@@ -10,7 +10,7 @@ class ButtonCheckBox {
     }
     write(){
         if(this.isClick){
-            app.message += ' '+this.type +':'+ this.title
+            app.message += this.type +':'+ this.title + ' '
         }
         else {
             if(app.message.indexOf(this.title)){
@@ -23,22 +23,25 @@ let app = new Vue({
     el: '#up',
     data: {
         message: '',
+        name: '',
+        address: '',
+        isSubmit: false,
         todoButtonList:[
             new ButtonCheckBox(
                 'Лэндинг',
-                'Работа'
+                'Необходимо сделать'
             ),
             new ButtonCheckBox(
                 'Сайт под ключ',
-                'Работа'
+                'Необходимо сделать'
             ),
             new ButtonCheckBox(
                 'Мобильное приложение',
-                'Работа'
+                'Необходимо сделать'
             ),
             new ButtonCheckBox(
                 'Проконсультироваться',
-                'Работа'
+                'Необходимо сделать'
             ),
         ],
         priceList:[
@@ -65,6 +68,15 @@ let app = new Vue({
         ],
     },
     methods:{
-
+        checkForm(){
+            if(this.name.length > 0 && this.address.length >0 && this.message.length > 0){
+                console.log(1)
+                this.isSubmit = true
+            }
+            else{
+                console.log(2)
+                this.isSubmit = false
+            }
+        }
     }
 })
