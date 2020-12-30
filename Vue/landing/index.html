@@ -20,7 +20,7 @@
     <!-- Навигационная панель -->
     <nav class="navbar navbar-expand-md navbar-dark" style="width: 100%; background-color: black;" >
         <div class="container">
-            <a class="navbar-brand" href="#">Leonid Septefrati</a>
+            <a class="navbar-brand" href="#">Desorel</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -84,7 +84,6 @@
         <!-- Конец главного экрана -->
 
 
-
         <!-- Проекты-->
         <div style="margin-top: 250px" id="projects">
             <h2>Проекты</h2>
@@ -96,7 +95,10 @@
                         <div class="card-body">
                             <h5 class="card-title">Allert</h5>
                             <p class="card-text">Мобильное приложение предсказывающее природные катастрофы</p>
-                            <button class="btn btn-info">Подробнее</button>
+                            <a href="https://2020.spaceappschallenge.org/challenges/inform/automated-detection-hazards/teams/nvg-1/project" class="btn btn-info">Подробнее</a>
+                            <!--github
+                            https://github.com/New-Vektor-Group/allerts
+                            -->
                         </div>
                     </div>
                 </div>
@@ -108,7 +110,7 @@
                             <h5 class="card-title">7avia</h5>
                             <p class="card-text">Веб-сайт предназначенный для онлайн покупок авиабилетов. Сайт подключен к базам данных.
                             </p>
-                            <button class="btn btn-info">Подробнее</button>
+                            <a href="https://7brothers.ml/7avia/" class="btn btn-info">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -120,7 +122,7 @@
                             <h5 class="card-title">The Witcher</h5>
                             <p class="card-text">The Witcher — американо-польский фэнтезийный телесериал, снятый
                                 по мотивам одноименной серии романов Анджея Сапковского.</p>
-                            <button class="btn btn-info">Подробнее</button>
+                            <a href="https://7brothers.ml/theWitcher/" class="btn btn-info">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +139,7 @@
 
             <div class="row row-cols-1 row-cols-md-4 mt-4">
 
-                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 100px ">
+                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 70px ">
                     <div class="card-header"></div>
                     <div class="card-body">
                         <h5 class="card-title">Вёрстка</h5>
@@ -146,7 +148,7 @@
                     </div>
                 </div>
 
-                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 100px ">
+                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 70px ">
                     <div class="card-header"></div>
                     <div class="card-body">
                         <h5 class="card-title">Адаптив</h5>
@@ -164,7 +166,7 @@
                     </div>
                 </div>
 
-                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 100px ">
+                <div class="card text-white bg-dark mb-4" style="max-width: 18rem; margin-right: 70px ">
                     <div class="card-header"></div>
                     <div class="card-body">
                         <h5 class="card-title">Android</h5>
@@ -192,10 +194,8 @@
                 <div class="row">
 
                     <div class="col">
-                        <button v-for="but in buttonList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
-                                type="button" class="btn btn-secondary ml-1 ">{{but.title}}</button>
-
-
+                        <button v-for="but in todoButtonList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
+                                type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
                     </div>
                 </div>
             </div>
@@ -204,30 +204,37 @@
                 <div class="row">
 
                     <div class="col">
-                        <button type="button" class="btn btn-secondary">20$</button>
-                        <button type="button" class="btn btn-secondary">60$</button>
-                        <button type="button" class="btn btn-secondary">100$</button>
-                        <button type="button" class="btn btn-secondary">Неограниченный</button>
+                        <button v-for="but in priceList" @click='but.changeStyle()' v-bind:class="but.isClick ? 'btn-warning' : 'btn-secondary'"
+                                type="button" class="btn btn-secondary ml-1 mt-1 btn-cb">{{but.title}}</button>
                     </div>
                 </div>
             </div>
+            <h4 class="mt-3">Ваши данные</h4>
+            <form class="needs-validation mt-3" action="https://formspree.io/f/mleoozlo" method="post">
 
-            <form class="needs-validation mt-3" novalidate>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" id="validationTooltip01" placeholder="Имя" required>
+                        <input type="text" class="form-control"  placeholder="Имя" name="name">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <textarea class="form-control" id="validationTextarea" placeholder="Ваше сообщение" required></textarea>
+                        <input type="text" class="form-control"  placeholder="Как с вами связаться?" name="address">
                     </div>
                 </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <textarea class="form-control" id="validationTextarea" placeholder="Ваше сообщение" name="message">{{message}}</textarea>
+                    </div>
+                </div>
+
                 <button class="btn btn-primary" type="submit">Отправить</button>
             </form>
         </div>
         <!--Конец контакты-->
-
+        <footer class="">
+            <br><br>
+        </footer>
 
     </div>
     <!--Конец бутстрап контейнера-->
