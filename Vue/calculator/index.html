@@ -17,34 +17,34 @@
                 </div>
                 <div class="card-body">
 
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" v-model="currentNumber">
                     <div class="row">
-                        <div class="col btn-warning mt-3 ml-3" align="center">C</div>
-                        <div class="col btn-warning mt-3 ml-3" align="center">%</div>
-                        <div class="col btn-warning mt-3 ml-3" align="center">/</div>
-                        <div class="col btn-warning mt-3 ml-3" align="center">X</div>
+                        <div @click="clear" class="col btn-warning mt-3 ml-3" align="center">C</div>
+                        <div @click="percent" class="col btn-warning mt-3 ml-3" align="center">%</div>
+                        <div @click="division" class="col btn-warning mt-3 ml-3" align="center">/</div>
+                        <div @click="multiplication" class="col btn-warning mt-3 ml-3" align="center">X</div>
                     </div>
                     <div class="row">
-                        <div class="col btn-light mt-3 ml-3" align="center">7</div>
-                        <div class="col btn-light mt-3 ml-3" align="center">8</div>
-                        <div class="col btn-light mt-3 ml-3" align="center">9</div>
-                        <div class="col btn-warning mt-3 ml-3" align="center">+</div>
+                        <div @click="append('7')" class="col btn-light mt-3 ml-3" align="center">7</div>
+                        <div @click="append('8')" class="col btn-light mt-3 ml-3" align="center">8</div>
+                        <div @click="append('9')" class="col btn-light mt-3 ml-3" align="center">9</div>
+                        <div @click="plus" class="col btn-warning mt-3 ml-3" align="center">+</div>
                     </div>
                     <div class="row">
-                        <div class="col btn-light mt-3 ml-3" align="center">4</div>
-                        <div class="col btn-light mt-3 ml-3" align="center">5</div>
-                        <div class="col btn-light mt-3 ml-3" align="center">6</div>
-                        <div class="col btn-warning mt-3 ml-3" align="center">-</div>
+                        <div @click="append('4')" class="col btn-light mt-3 ml-3" align="center">4</div>
+                        <div @click="append('5')" class="col btn-light mt-3 ml-3" align="center">5</div>
+                        <div @click="append('6')" class="col btn-light mt-3 ml-3" align="center">6</div>
+                        <div @click="minus" class="col btn-warning mt-3 ml-3" align="center">-</div>
                     </div>
                     <div class="row">
-                        <div class="col btn-light mt-3 ml-3" align="center">1</div>
-                        <div class="col btn-light mt-3 ml-3" align="center">2</div>
-                        <div class="col btn-light mt-3 ml-3" align="center">3</div>
-                        <div class="col btn-warning mt-3 ml-3" align="center">=</div>
+                        <div @click="append('1')" class="col btn-light mt-3 ml-3" align="center">1</div>
+                        <div @click="append('2')" class="col btn-light mt-3 ml-3" align="center">2</div>
+                        <div @click="append('3')" class="col btn-light mt-3 ml-3" align="center">3</div>
+                        <div @click="equal" class="col btn-warning mt-3 ml-3" align="center">=</div>
                     </div>
                     <div class="row">
-                        <div class="col btn-light mt-3 ml-3" align="center">0</div>
-                        <div class="col btn-warning mt-3 ml-3" align="center">.</div>
+                        <div @click="append('0')" class="col btn-light mt-3 ml-3" align="center">0</div>
+                        <div @click="dot" class="col btn-warning mt-3 ml-3" align="center">.</div>
                     </div>
 
                     <div class="mt-5">
