@@ -9,9 +9,9 @@
 </head>
 <body>
     <div class="container">
-        <div id="app" class="mt-5">
+        <div id="app" class="mt-5" align="center">
 
-            <div class="card">
+            <div class="card" style="width: 450px">
                 <div class="card-header">
                     Calculator
                 </div>
@@ -49,7 +49,7 @@
 
                     <div class="mt-5">
                         <h1 align="center">History</h1>
-                        <p>some numbers</p>
+                        <history v-for="item in historyList" v-bind:text="item" v-bind:key="item.key"></history>
                     </div>
                 </div>
             </div>
@@ -57,6 +57,10 @@
         </div>
     </div>
 
-
+<style>
+    .col{
+        height: 40px;
+    }
+</style>
 </body>
 </html>
