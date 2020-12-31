@@ -188,7 +188,7 @@
         <div style="margin-top: 70px" id="contacts">
             <h2>Оставить заявку</h2>
             <div>
-                <h4 class="mt-3">Что нужно сделать?</h4>
+                <h4 class="mt-5">Что нужно сделать?</h4>
                 <div class="row">
 
                     <div class="col" >
@@ -198,7 +198,7 @@
                 </div>
             </div>
             <div>
-                <h4 class="mt-3">Бюджет проекта</h4>
+                <h4 class="mt-5">Бюджет проекта</h4>
                 <div class="row">
 
                     <div class="col">
@@ -207,21 +207,24 @@
                     </div>
                 </div>
             </div>
-            <h4 class="mt-3">Ваши данные</h4>
+            <h4 class="mt-5">Ваши данные</h4>
             <form class="needs-validation mt-3" action="https://formspree.io/f/mleoozlo" method="post">
 
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
-                        <input type="text" class="form-control" v-model="name" @mousemove="checkForm" placeholder="Имя" name="name">
+                        <label for="validationText">Ваше имя</label>
+                        <input type="text" id="validationText" class="form-control" v-model="name" @mousemove="checkForm" placeholder="Имя" name="name">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
+                        <label for="validationText">Как с вами связаться?</label>
                         <input type="text" class="form-control" v-model="address" @mousemove="checkForm" placeholder="Как с вами связаться?" name="address">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col-md-6 mb-3">
+                        <label for="validationText">Ваше сообщение</label>
                         <textarea class="form-control" id="validationTextarea" @mousemove="checkForm" placeholder="Ваше сообщение"
                                   name="message">{{message}}</textarea>
                     </div>
@@ -232,7 +235,7 @@
             </form>
         </div>
         <!--Конец контакты-->
-        
+
         <footer class="">
             <br><br>
         </footer>

@@ -70,11 +70,9 @@ let app = new Vue({
     methods:{
         checkForm(){
             if(this.name.length > 0 && this.address.length >0 && this.message.length > 0){
-                console.log(1)
                 this.isSubmit = true
             }
             else{
-                console.log(2)
                 this.isSubmit = false
             }
         }
