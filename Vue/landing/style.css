@@ -1,6 +1,9 @@
 html {
     scroll-behavior: smooth;
 }
+.container{
+    font-family: 'Montserrat', sans-serif;
+}
 span{
     background-color: #ffbf00;
     color: black;
@@ -17,11 +20,15 @@ label{
 h2{
     color: white;
 }
+h1{
+    color: white;
+}
 h4{
     color: white;
 }
 p{
     color: white;
+
 }
 .text-white-50{
     text-align: center;

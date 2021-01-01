@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Dezorel WEB Developer</title>
 
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!--CSS-->
     <link rel="stylesheet" href="style.css">
 <!--~5часов-->
     <!--Bootstrap-->
@@ -54,7 +59,7 @@
 
 
         <!-- Главный экран -->
-        <div style="margin-top: 150px">
+        <div style="margin-top: 140px">
             <div class="row">
                 <div class="col-md-8">
                     <header>
@@ -63,20 +68,21 @@
                     </header>
                 </div>
             </div>
+
             <div class="row mt-4">
-                <div class="col-md-1" align="center">
+                <div class="col-md-1">
                     <div class="badge badge-pill badge-dark">Вёрстка</div>
                 </div>
-                <div class="col-md-1" align="center">
+                <div class="col-md-1">
                     <div class="badge badge-pill badge-dark">Адаптив</div>
                 </div>
-                <div class="col-md-1" align="center">
+                <div class="col-md-1">
                     <div class="badge badge-pill badge-dark">SPA</div>
                 </div>
-                <div class="col-md-1" align="center">
+                <div class="col-md-1">
                     <div class="badge badge-pill badge-dark">Android</div>
                 </div>
-                <div class="col-md-1" align="center">
+                <div class="col-md-1">
                     <div class="badge badge-pill badge-dark">Тех.поддержка</div>
                 </div>
                 <!--
@@ -90,41 +96,41 @@
 
 
         <!-- Проекты-->
-        <div style="margin-top: 250px" id="projects">
+        <div style="margin-top: 140px" id="projects">
             <h2>Проекты</h2>
             <div class="row row-cols-1 row-cols-lg-2 mt-4">
 
                 <div class="col mb-4">
-                    <div class="card text-white bg-dark">
+                    <div class="card text-white bg-dark h-100">
                         <img src="img/allert.JPG" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Allert</h5>
                             <p class="card-text">Мобильное приложение предсказывающее природные катастрофы</p>
-                            <a href="allertInfo.html" class="btn btn-info">Подробнее</a>
+                            <a href="allertInfo.html" class="btn btn-warning">Подробнее</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col mb-4">
-                    <div class="card text-white bg-dark">
+                    <div class="card text-white bg-dark h-100">
                         <img src="img/7avia.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">7avia</h5>
                             <p class="card-text">Веб-сайт предназначенный для онлайн покупок авиабилетов. Сайт подключен к базам данных.
                             </p>
-                            <a href="https://7brothers.ml/7avia/" class="btn btn-info">Подробнее</a>
+                            <a href="https://7brothers.ml/7avia/" class="btn btn-warning">Подробнее</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col mb-4">
-                    <div class="card text-white bg-dark">
+                    <div class="card text-white bg-dark h-100">
                         <img src="img/theWitcher.JPG" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">The Witcher</h5>
                             <p class="card-text">The Witcher — американо-польский фэнтезийный телесериал, снятый
                                 по мотивам одноименной серии романов Анджея Сапковского.</p>
-                            <a href="https://7brothers.ml/theWitcher/" class="btn btn-info">Подробнее</a>
+                            <a href="https://7brothers.ml/theWitcher/" class="btn btn-warning">Подробнее</a>
                         </div>
                     </div>
                 </div>
@@ -201,7 +207,7 @@
                     </div>
                 </div>
 
-                <button class="btn btn-primary" v-show="isSubmit"  type="submit">Отправить</button>
+                <button class="btn btn-warning" v-show="isSubmit"  type="submit">Отправить</button>
 
             </form>
         </div>

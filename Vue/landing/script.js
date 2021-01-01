@@ -60,15 +60,19 @@ let app = new Vue({
                 'Бюджет'
             ),
             new ButtonCheckBox(
-                '50$',
-                'Бюджет'
-            ),
-            new ButtonCheckBox(
                 '80$',
                 'Бюджет'
             ),
             new ButtonCheckBox(
                 '100$',
+                'Бюджет'
+            ),
+            new ButtonCheckBox(
+                '250$',
+                'Бюджет'
+            ),
+            new ButtonCheckBox(
+                '400$',
                 'Бюджет'
             ),
             new ButtonCheckBox(

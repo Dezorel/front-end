@@ -5,6 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <!--CSS-->
     <link rel="stylesheet" href="style.css">
 
     <!-- Bootstrap CSS -->
@@ -36,13 +41,13 @@
 </nav>
 <!--Конец навигационной панели-->
 
-<div class="container">
+<div class="container" id="up">
     <!--бустрап контэйнер-->
 
     <div class="row" style="margin-top: 100px">
         <div class="col-lg-6" align="center">
-            <h2 class="mt-5">Allert</h2>
-            <p class="mt-5">Приложение разрабатывалось для NASA хакатона 2020</p>
+            <h1 class="mt-5">Allert</h1>
+            <p class="mt-5">Приложение разрабатывалось для NASA International Space Apps challenge 2020</p>
 
         </div>
         <div class="col-lg-6" align="center">
@@ -52,12 +57,13 @@
 
     <!--Поставленые цели, описание приложения, суть-->
     <div style="margin-top: 200px">
-        <h4 >Предыстория: align-self-center </h4>
+        <h4 >Предыстория:</h4>
         <div class="row">
             <div class="col-md-7">
-                <p>Хакатон длился 3 полных дня, 2 из которых давалось на разработку приложения. Наша команда состояла из 6 человек.
-                    Моей ролью в команде было непосредственно создание android-приложения и необходимого функционала.
-                    Наша команда заняла призовое место на региональном уровне и вышла и стала глобальным номинантом.</p>
+                <p>Хакатон длился 3 полных дня, 2 из которых предоставлялось на разработку приложения.
+                        Наша команда состояла из 6 человек. Моей ролью в команде было непосредственно
+                            создание android-приложения и необходимого функционала.
+                                Наша команда заняла призовое место на региональном уровне и стала глобальным номинантом.</p>
             </div>
         </div>
     </div>
@@ -131,6 +137,8 @@
 
 
     <!--Конец бустрап контэйнера-->
+
+    <a href="#navigation" v-show="isUp" @click="checkUp" style="position:fixed; right: 10px; bottom:15px"><img width="40px" src="img/arrow.svg" ></a>
 </div>
 
 
