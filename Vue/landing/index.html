@@ -50,7 +50,7 @@
     </nav>
     <!--Конец навигационной панели-->
 
-    <div class="container" id="up">
+    <div class="container" id="up" @mousemove="checkUp">
 
 
         <!-- Главный экран -->
@@ -64,19 +64,19 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-md-1">
+                <div class="col-md-1" align="center">
                     <div class="badge badge-pill badge-dark">Вёрстка</div>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1" align="center">
                     <div class="badge badge-pill badge-dark">Адаптив</div>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1" align="center">
                     <div class="badge badge-pill badge-dark">SPA</div>
                 </div>
-                <div class="col-md-1">
+                <div class="col-md-1" align="center">
                     <div class="badge badge-pill badge-dark">Android</div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-1" align="center">
                     <div class="badge badge-pill badge-dark">Тех.поддержка</div>
                 </div>
                 <!--
@@ -214,9 +214,11 @@
             <br><br>
         </footer>
 
+
+        <a href="#navigation" v-show="isUp" @click="checkUp" style="position:fixed; right: 10px; bottom:15px"><img width="40px" src="img/arrow.svg" ></a>
     </div>
     <!--Конец бутстрап контейнера-->
-    <a href="#navigation" style="position:fixed; right: 10px; bottom:15px"><img width="40px" src="img/arrow.svg" ></a>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

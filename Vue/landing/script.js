@@ -17,6 +17,7 @@ class ButtonCheckBox {
                 app.message = app.message.replace(this.type +':'+ this.title, '');
             }
         }
+
     }
 }
 class ServicePost{
@@ -34,6 +35,7 @@ let app = new Vue({
         name: '',
         address: '',
         isSubmit: false,
+        isUp: false,
         todoButtonList:[
             new ButtonCheckBox(
                 'Лэндинг',
@@ -108,6 +110,19 @@ let app = new Vue({
             else{
                 this.isSubmit = false
             }
-        }
+        },
+        checkUp(){
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+            //console.log( "Текущая прокрутка: " + scrollTop )
+            if(scrollTop < 300){
+                this.isUp = false
+
+            }
+            else{
+                this.isUp = true
+
+            }
+        },
     }
 })
