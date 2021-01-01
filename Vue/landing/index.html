@@ -106,7 +106,7 @@
         <!-- Проекты-->
         <div style="margin-top: 250px" id="projects">
             <h2>Проекты</h2>
-            <div class="row row-cols-1 row-cols-md-2 mt-4">
+            <div class="row row-cols-1 row-cols-lg-2 mt-4">
 
                 <div class="col mb-4">
                     <div class="card text-white bg-dark">
@@ -156,52 +156,19 @@
         <div style="margin-top: 70px" id="service">
             <h2>Какие услуги я предоставляю?</h2>
 
-            <div class="row row-cols-1 row-cols-md-4 mt-4">
+            <div class="row row-cols-1 row-cols-lg-3 mt-4">
 
-                <div class="card text-white bg-dark mb-4 ml-2" style="max-width: 18rem; margin-right: 70px ">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Вёрстка</h5>
-                        <p class="card-text">Создание сайта с нуля по готовому макету. Создание функционала и необхожимых
-                        анимации. Загрузка сайта на хостинг. Покупка доменного имени (если есть необходимость)</p>
-                    </div>
-                </div>
-
-                <div class="card text-white bg-dark mb-4 ml-2" style="max-width: 18rem; margin-right: 70px ">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Адаптив</h5>
-                        <p class="card-text">Создание адаптивва для вашего сайта. Адаптив это правильное расположение
-                            элементов на разных устройствах (мобильных телефонах, планшетах, экранов телевизоров)</p>
-                    </div>
-                </div>
-
-                <div class="card text-white bg-dark mb-4 ml-2" style="max-width: 18rem; ">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">SPA</h5>
-                        <p class="card-text">Создание SPA с помощью фрэймворка Vue JS. SPA - "single page
-                            application" или же простым языком - одностраничное приложение.</p>
-                    </div>
-                </div>
-
-                <div class="card text-white bg-dark mb-4 ml-2" style="max-width: 18rem; margin-right: 70px ">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Android</h5>
-                        <p class="card-text">Разработка и создание android-приложения про готовому макету.</p>
-                    </div>
-                </div>
-
-                <div class="card text-white bg-dark mb-4 ml-2" style="max-width: 18rem; ">
-                    <div class="card-header"></div>
-                    <div class="card-body">
-                        <h5 class="card-title">Тех. поддержка</h5>
-                        <p class="card-text">Проверка сайта на ошибки и вирусы. Доработка и обновление компонентов сайта.</p>
+                <div class="col mb-4" v-for="service in serviceList" >
+                    <div class="card text-white bg-dark service-card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{service.title}}</h5>
+                            <p class="card-text mt-2">{{service.description}}</p>
+                        </div>
                     </div>
                 </div>
 
             </div>
+            
         <!--Конец услуги-->
         </div>
 
