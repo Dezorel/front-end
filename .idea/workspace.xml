@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d39be876-ae6c-49c0-a95a-9a50ddb23655" name="Default Changelist" comment="4 - primitive type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/landing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/landing/7aviaInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/7aviaInfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <workItem from="1609407442764" duration="1535000" />
       <workItem from="1609516757605" duration="697000" />
       <workItem from="1609518778172" duration="10894000" />
-      <workItem from="1609577441266" duration="605000" />
+      <workItem from="1609577441266" duration="1312000" />
     </task>
     <task id="LOCAL-00001" summary="3 - operators">
       <created>1608903569383</created>
