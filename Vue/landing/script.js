@@ -38,6 +38,14 @@ let app = new Vue({
         isUp: false,
         todoButtonList:[
             new ButtonCheckBox(
+                'Вёрстка',
+                'Необходимо сделать'
+            ),
+            new ButtonCheckBox(
+                'SPA',
+                'Необходимо сделать'
+            ),
+            new ButtonCheckBox(
                 'Лэндинг',
                 'Необходимо сделать'
             ),
