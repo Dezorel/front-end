@@ -41,7 +41,7 @@
                         <a class="nav-link" href="#faq">Вопрос - ответ</a>
                     </li>
                     <li class="nav-item ml-3">
-                        <a class="nav-link disabled" href="#">Отзывы</a>
+                        <a class="nav-link" href="reviews.html">Отзывы</a>
                     </li>
                     <li class="nav-item ml-3">
                         <a class="nav-link disabled" href="#">Блог</a>
@@ -169,8 +169,8 @@
                 <div class="col mb-4" v-for="faq in faqList" >
                     <div class="card text-white bg-dark h-100">
                         <div class="card-body">
-                            <h5 class="card-title">{{faq.title}}</h5>
-                            <p class="card-text mt-4">{{faq.description}}</p>
+                            <h5 class="card-title">Вопроc: {{faq.title}}</h5>
+                            <p class="card-text mt-4">Ответ: {{faq.description}}</p>
                         </div>
                     </div>
                 </div>

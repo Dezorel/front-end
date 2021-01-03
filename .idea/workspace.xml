@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d39be876-ae6c-49c0-a95a-9a50ddb23655" name="Default Changelist" comment="4 - primitive type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/landing/allertInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/allertInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/landing/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/landing/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/landing/reviews.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/reviews.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <workItem from="1609611510773" duration="611000" />
       <workItem from="1609619467844" duration="509000" />
       <workItem from="1609673975737" duration="594000" />
-      <workItem from="1609688929080" duration="1523000" />
+      <workItem from="1609688929080" duration="3142000" />
     </task>
     <task id="LOCAL-00001" summary="3 - operators">
       <created>1608903569383</created>
