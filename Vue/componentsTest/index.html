@@ -20,8 +20,10 @@
 
 <div id="thisApp">
 
-
-
+    <h3>Simple component</h3>
+        <test text="this is text" title="TEST" subtitle="vue components"></test>
+    <h3>Component with loops</h3>
+        <test v-for="item in list" :key="item.key" :title="item.title" :subtitle="item.subtitle" :text="item.text"></test>
 
 </div>
 
