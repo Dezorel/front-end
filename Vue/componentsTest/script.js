@@ -6,7 +6,7 @@ Vue.component('test',{
         title: String,
         subtitle: String,
         text: String,
-        isClick: Boolean,
+        isClick: Number,
     },
     template: '<div class="card" style="width: 18rem;">\n' +
         '  <div class="card-body">\n' +
@@ -16,14 +16,7 @@ Vue.component('test',{
         '  </div>\n' +
         '</div>',
     methods: {
-        changeThisColor(){
-            if(this.isClick === true){
-                this.isClick = false
-            }
-            else{
-                this.isClick = true
-            }
-        }
+
     }
 })
 
@@ -44,19 +37,19 @@ let app = new Vue({
                 'this',
                 'is',
                 'teeesst',
-                false
+                2
             ),
             new Post(
                 'other',
                 'text',
                 'her',
-                false
+                2
             ),
             new Post(
                 '1',
                 '2',
                 '3',
-                true
+                1
             )
         ]
     },
