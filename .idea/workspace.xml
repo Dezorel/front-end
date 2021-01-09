@@ -5,6 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vue/componentsTest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/componentsTest/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vue/componentsTest/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/componentsTest/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/landing/img/theWitcher.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/landing/img/theWitcher/mobile.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/landing/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/landing/theWitcherInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/theWitcherInfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,9 @@
       <workItem from="1609787923956" duration="1552000" />
       <workItem from="1609865344678" duration="217000" />
       <workItem from="1609953045164" duration="3199000" />
-      <workItem from="1610020865952" duration="516000" />
+      <workItem from="1610020865952" duration="1241000" />
+      <workItem from="1610049324944" duration="2638000" />
+      <workItem from="1610211417570" duration="714000" />
     </task>
     <task id="LOCAL-00001" summary="3 - operators">
       <created>1608903569383</created>

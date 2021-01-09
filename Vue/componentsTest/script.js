@@ -50,7 +50,7 @@ let app = new Vue({
                 '2',
                 '3',
                 1
-            )
+            ),
         ]
     },
     methods: {
