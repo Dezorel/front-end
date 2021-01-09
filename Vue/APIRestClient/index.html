@@ -14,10 +14,15 @@
     <!--Конец Vue-->
 
     <title>REST API test</title>
+    <style>     /* v-cloak - делает так, что бы при обновлении страницы vue не показывал не подгруженные модули */
+        [v-cloak]{
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
-<div class="container" id="app">
+<div class="container" id="app" v-cloak>    <!-- v-cloak - делает так, что бы при обновлении страницы vue не показывал не подгруженные модули -->
 
     <form class="form-inline mb-3 mt-5" @submit.prevent="createContact">        <!--Отмена поведения по умолчанию-->
         <div class="form-group mr-5">
