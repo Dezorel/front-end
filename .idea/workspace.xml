@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d39be876-ae6c-49c0-a95a-9a50ddb23655" name="Default Changelist" comment="4 - primitive type">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vue/APIRestClient/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/APIRestClient/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vue/APIRestClient/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/APIRestClient/script.js" afterDir="false" />
     </list>
@@ -88,7 +89,7 @@
       <workItem from="1610049324944" duration="2638000" />
       <workItem from="1610211417570" duration="1028000" />
       <workItem from="1610223399371" duration="4583000" />
-      <workItem from="1610228616360" duration="497000" />
+      <workItem from="1610228616360" duration="1447000" />
     </task>
     <task id="LOCAL-00001" summary="3 - operators">
       <created>1608903569383</created>
