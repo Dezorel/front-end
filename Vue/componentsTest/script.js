@@ -6,17 +6,38 @@ Vue.component('test',{
         title: String,
         subtitle: String,
         text: String,
-        isClick: Number,
     },
-    template: '<div class="card" style="width: 18rem;">\n' +
+    data(){
+        return{
+            isClick: false
+        }
+    },
+    template: '<div :class="isClick ? \'text-success\' : \'text-danger\'" class="card mt-3" style="width: 18rem;" >\n' +
         '  <div class="card-body">\n' +
-        '    <h5 class="card-title">{{title}}</h5>\n' +
+        '    <h5 class="card-title" >{{title}}</h5>\n' +
         '    <h6 class="card-subtitle mb-2 text-muted">{{subtitle}}</h6>\n' +
-        '    <p class="card-text">{{text}}</p>\n' +
+        '    <p class="card-text">{{text}}</p>\n ' +
+        '       <a href="#" class="btn btn-primary" @click="clicked">Изменить</a>' +
         '  </div>\n' +
         '</div>',
     methods: {
-
+        changeColor() {
+            console.log(1)
+            if(this.isClick){
+                return{
+                    backgroundColor: 'red'
+                }
+            }
+            else{
+                return{
+                    backgroundColor: 'white'
+                }
+            }
+        },
+        clicked(){
+            this.isClick = !this.isClick
+            console.log(this.isClick)
+        }
     }
 })
 
@@ -27,6 +48,7 @@ class Post{
         this.text = text
         this.isClick = isClick
     }
+
 }
 
 let app = new Vue({
@@ -37,19 +59,19 @@ let app = new Vue({
                 'this',
                 'is',
                 'teeesst',
-                2
+                false
             ),
             new Post(
                 'other',
                 'text',
                 'her',
-                2
+                false
             ),
             new Post(
-                '1',
-                '2',
-                '3',
-                1
+                'this true',
+                'is true',
+                'true app',
+                true,
             ),
         ]
     },

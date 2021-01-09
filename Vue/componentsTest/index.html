@@ -24,7 +24,7 @@
         <test text="this is text" title="TEST" subtitle="vue components"></test>
 
     <h3>Component with loops</h3>
-        <test :class="item.isClick%2===0 ? 'text-success': 'text-danger'" v-for="item in list" :key="item.key" :title="item.title" :subtitle="item.subtitle" :text="item.text"></test>
+        <test v-for="item in list" :key="item.key" :title="item.title" :subtitle="item.subtitle" :text="item.text" ></test>
 
 </div>
 
