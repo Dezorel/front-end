@@ -39,14 +39,14 @@
     <div v-if="contacts.length">
         <div class="card mb-3" v-for="contact in contacts">
             <div class="card-body">
-                <h5 class="card-title">{{contact.name}}</h5>
+                <h5 class="card-title" :style="{color: contact.marked ? 'red': 'green'}">{{contact.name}}</h5>
                 <p class="card-text">{{contact.value}}</p>
-                <button class="btn btn-primary">Отметить</button>
+                <button class="btn btn-primary" @click="markedContact(contact.id)" :disabled="contact.marked">Отметить</button>
                 <button class="btn btn-danger">Удалить</button>
             </div>
         </div>
     </div>
-    <p v-else>Пока нет данных</p>
+    <h3 class="mt-5" v-else>Пока нет данных</h3>
 
 
 </div>
