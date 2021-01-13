@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d39be876-ae6c-49c0-a95a-9a50ddb23655" name="Default Changelist" comment="4 - primitive type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vue/APIRestClient/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/APIRestClient/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vue/landing/happyPetsInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vue/landing/happyPetsInfo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +90,8 @@
       <workItem from="1610223399371" duration="4583000" />
       <workItem from="1610228616360" duration="1791000" />
       <workItem from="1610278247870" duration="1211000" />
-      <workItem from="1610385969150" duration="2273000" />
+      <workItem from="1610385969150" duration="2393000" />
+      <workItem from="1610554600967" duration="352000" />
     </task>
     <task id="LOCAL-00001" summary="3 - operators">
       <created>1608903569383</created>
